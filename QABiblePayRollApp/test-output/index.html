@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-GroupTestingSuite" class="navigator-link">
+              <span class="suite-name border-passed">GroupTestingSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-GroupTestingSuite" class="navigator-link ">
+                    <span>D:\MavenProjects\QABiblePayRollApp\groupTesting.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-GroupTestingSuite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-GroupTestingSuite" class="navigator-link ">
+                    <span>3 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-GroupTestingSuite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-GroupTestingSuite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-GroupTestingSuite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-GroupTestingSuite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">11 methods,   11 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-GroupTestingSuite" class="hide-methods passed suite-GroupTestingSuite"> (hide)</a> <!-- hide-methods passed suite-GroupTestingSuite -->
+                      <a href="#" panel-name="suite-GroupTestingSuite" class="show-methods passed suite-GroupTestingSuite"> (show)</a> <!-- show-methods passed suite-GroupTestingSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-GroupTestingSuite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-GroupTestingSuite" title="testClasses.PasswordResetTestClass" class="method navigator-link" hash-for-method="verifyCancelButtonClickRedirectToLoginPageOrNot">verifyCancelButtonClickRedirectToLoginPageOrNot</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-GroupTestingSuite" title="testClasses.LoginTestClass" class="method navigator-link" hash-for-method="verifyCheckBoxRememberMeIsSelectedOrNot">verifyCheckBoxRememberMeIsSelectedOrNot</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-GroupTestingSuite" title="testClasses.PasswordResetTestClass" class="method navigator-link" hash-for-method="verifyEmailCannotBeBlankMessageShowsWhenClikngSendButton">verifyEmailCannotBeBlankMessageShowsWhenClikngSendButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-GroupTestingSuite" title="testClasses.PasswordResetTestClass" class="method navigator-link" hash-for-method="verifyEmailIsNotAValidEmailAddress">verifyEmailIsNotAValidEmailAddress</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-GroupTestingSuite" title="testClasses.PasswordResetTestClass" class="method navigator-link" hash-for-method="verifyIncorrectMailIdSubmitShowsThereIsNoUserWithThisEmail">verifyIncorrectMailIdSubmitShowsThereIsNoUserWithThisEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-GroupTestingSuite" title="testClasses.LoginTestClass" class="method navigator-link" hash-for-method="verifySuccessfullLogin">verifySuccessfullLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-GroupTestingSuite" title="testClasses.LoginTestClass" class="method navigator-link" hash-for-method="verifyTheExpectedPageIsOpenWhileHittingTheURL">verifyTheExpectedPageIsOpenWhileHittingTheURL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-GroupTestingSuite" title="testClasses.LoginTestClass" class="method navigator-link" hash-for-method="verifyTheForgetPasswordResetCliksDirectedToCorrectPageOrNot">verifyTheForgetPasswordResetCliksDirectedToCorrectPageOrNot</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-GroupTestingSuite" title="testClasses.LoginTestClass" class="method navigator-link" hash-for-method="verifyUnsuccessfulLogin(carol, admin)">verifyUnsuccessfulLogin(carol, admin)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-GroupTestingSuite" title="testClasses.LoginTestClass" class="method navigator-link" hash-for-method="verifyUnsuccessfulLogin(admin, admin123)">verifyUnsuccessfulLogin(admin, admin123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-GroupTestingSuite" title="testClasses.LoginTestClass" class="method navigator-link" hash-for-method="verifyUnsuccessfulLogin(carl, 1q2w3e4r)">verifyUnsuccessfulLogin(carl, 1q2w3e4r)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-GroupTestingSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-GroupTestingSuite" class="panel GroupTestingSuite">
+          <div class="suite-GroupTestingSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testClasses.LoginTestClass</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCheckBoxRememberMeIsSelectedOrNot">
+                  </a> <!-- verifyCheckBoxRememberMeIsSelectedOrNot -->
+                  <span class="method-name">verifyCheckBoxRememberMeIsSelectedOrNot</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySuccessfullLogin">
+                  </a> <!-- verifySuccessfullLogin -->
+                  <span class="method-name">verifySuccessfullLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTheExpectedPageIsOpenWhileHittingTheURL">
+                  </a> <!-- verifyTheExpectedPageIsOpenWhileHittingTheURL -->
+                  <span class="method-name">verifyTheExpectedPageIsOpenWhileHittingTheURL</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTheForgetPasswordResetCliksDirectedToCorrectPageOrNot">
+                  </a> <!-- verifyTheForgetPasswordResetCliksDirectedToCorrectPageOrNot -->
+                  <span class="method-name">verifyTheForgetPasswordResetCliksDirectedToCorrectPageOrNot</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUnsuccessfulLogin(carol, admin)">
+                  </a> <!-- verifyUnsuccessfulLogin(carol, admin) -->
+                  <span class="method-name">verifyUnsuccessfulLogin</span>
+                  <span class="parameters">(carol,admin)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUnsuccessfulLogin(admin, admin123)">
+                  </a> <!-- verifyUnsuccessfulLogin(admin, admin123) -->
+                  <span class="method-name">verifyUnsuccessfulLogin</span>
+                  <span class="parameters">(admin,admin123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUnsuccessfulLogin(carl, 1q2w3e4r)">
+                  </a> <!-- verifyUnsuccessfulLogin(carl, 1q2w3e4r) -->
+                  <span class="method-name">verifyUnsuccessfulLogin</span>
+                  <span class="parameters">(carl,1q2w3e4r)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-GroupTestingSuite-class-passed -->
+          <div class="suite-GroupTestingSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testClasses.PasswordResetTestClass</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCancelButtonClickRedirectToLoginPageOrNot">
+                  </a> <!-- verifyCancelButtonClickRedirectToLoginPageOrNot -->
+                  <span class="method-name">verifyCancelButtonClickRedirectToLoginPageOrNot</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyEmailCannotBeBlankMessageShowsWhenClikngSendButton">
+                  </a> <!-- verifyEmailCannotBeBlankMessageShowsWhenClikngSendButton -->
+                  <span class="method-name">verifyEmailCannotBeBlankMessageShowsWhenClikngSendButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyEmailIsNotAValidEmailAddress">
+                  </a> <!-- verifyEmailIsNotAValidEmailAddress -->
+                  <span class="method-name">verifyEmailIsNotAValidEmailAddress</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyIncorrectMailIdSubmitShowsThereIsNoUserWithThisEmail">
+                  </a> <!-- verifyIncorrectMailIdSubmitShowsThereIsNoUserWithThisEmail -->
+                  <span class="method-name">verifyIncorrectMailIdSubmitShowsThereIsNoUserWithThisEmail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-GroupTestingSuite-class-passed -->
+        </div> <!-- panel GroupTestingSuite -->
+        <div panel-name="test-xml-GroupTestingSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\MavenProjects\QABiblePayRollApp\groupTesting.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;GroupTestingSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;extentReport.TestListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;Launch&quot;/&gt;
+        &lt;include name=&quot;Group A&quot;/&gt;
+        &lt;include name=&quot;Group B&quot;/&gt;
+        &lt;include name=&quot;Group C&quot;/&gt;
+        &lt;include name=&quot;Close&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testClasses.LoginTestClass&quot;/&gt;
+      &lt;class name=&quot;testClasses.PasswordResetTestClass&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- GroupTestingSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-GroupTestingSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for GroupTestingSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-GroupTestingSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for GroupTestingSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">Group A</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifySuccessfullLogin</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyUnsuccessfulLogin</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">Group B</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyCancelButtonClickRedirectToLoginPageOrNot</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyCheckBoxRememberMeIsSelectedOrNot</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyTheExpectedPageIsOpenWhileHittingTheURL</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyTheForgetPasswordResetCliksDirectedToCorrectPageOrNot</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">Group C</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyEmailCannotBeBlankMessageShowsWhenClikngSendButton</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyEmailIsNotAValidEmailAddress</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyIncorrectMailIdSubmitShowsThereIsNoUserWithThisEmail</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-GroupTestingSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for GroupTestingSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_GroupTestingSuite');
+function tableData_GroupTestingSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(11);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'verifySuccessfullLogin')
+data.setCell(0, 2, 'testClasses.LoginTestClass')
+data.setCell(0, 3, 3332);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyEmailIsNotAValidEmailAddress')
+data.setCell(1, 2, 'testClasses.PasswordResetTestClass')
+data.setCell(1, 3, 2196);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyUnsuccessfulLogin')
+data.setCell(2, 2, 'testClasses.LoginTestClass')
+data.setCell(2, 3, 1937);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyIncorrectMailIdSubmitShowsThereIsNoUserWithThisEmail')
+data.setCell(3, 2, 'testClasses.PasswordResetTestClass')
+data.setCell(3, 3, 1898);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyEmailCannotBeBlankMessageShowsWhenClikngSendButton')
+data.setCell(4, 2, 'testClasses.PasswordResetTestClass')
+data.setCell(4, 3, 1710);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyCancelButtonClickRedirectToLoginPageOrNot')
+data.setCell(5, 2, 'testClasses.PasswordResetTestClass')
+data.setCell(5, 3, 1673);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyUnsuccessfulLogin')
+data.setCell(6, 2, 'testClasses.LoginTestClass')
+data.setCell(6, 3, 1501);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyUnsuccessfulLogin')
+data.setCell(7, 2, 'testClasses.LoginTestClass')
+data.setCell(7, 3, 1471);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyTheForgetPasswordResetCliksDirectedToCorrectPageOrNot')
+data.setCell(8, 2, 'testClasses.LoginTestClass')
+data.setCell(8, 3, 951);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifyTheExpectedPageIsOpenWhileHittingTheURL')
+data.setCell(9, 2, 'testClasses.LoginTestClass')
+data.setCell(9, 3, 210);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifyCheckBoxRememberMeIsSelectedOrNot')
+data.setCell(10, 2, 'testClasses.LoginTestClass')
+data.setCell(10, 3, 53);
+window.suiteTableData['GroupTestingSuite']= { tableData: data, tableDiv: 'times-div-GroupTestingSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 16 seconds</span>
+              <div id="times-div-GroupTestingSuite">
+              </div> <!-- times-div-GroupTestingSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-GroupTestingSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for GroupTestingSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-GroupTestingSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">1 ignored method</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testClasses.PasswordResetTestClass</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">createReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-GroupTestingSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">testClasses.LoginTestClass</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">createReport(org.testng.TestRunner@41938e1e)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">73 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyTheExpectedPageIsOpenWhileHittingTheURL</span>
+                <span class="method-start">8667 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyTheExpectedPageIsOpenWhileHittingTheURL status=SUCCESS method=LoginTestClass....)</span>
+                <span class="method-start">8890 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">9175 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySuccessfullLogin</span>
+                <span class="method-start">16710 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifySuccessfullLogin status=SUCCESS method=LoginTestClass.verifySuccessfullLogin(...)</span>
+                <span class="method-start">20046 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">20444 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUnsuccessfulLogin(admin, admin123)</span>
+                <span class="method-start">27680 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyUnsuccessfulLogin status=SUCCESS method=LoginTestClass.verifyUnsuccessfulLogi...)</span>
+                <span class="method-start">29153 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">29388 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUnsuccessfulLogin(carl, 1q2w3e4r)</span>
+                <span class="method-start">35687 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyUnsuccessfulLogin status=SUCCESS method=LoginTestClass.verifyUnsuccessfulLogi...)</span>
+                <span class="method-start">37192 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">37527 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUnsuccessfulLogin(carol, admin)</span>
+                <span class="method-start">44034 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyUnsuccessfulLogin status=SUCCESS method=LoginTestClass.verifyUnsuccessfulLogi...)</span>
+                <span class="method-start">45973 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">46181 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyCheckBoxRememberMeIsSelectedOrNot</span>
+                <span class="method-start">53480 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyCheckBoxRememberMeIsSelectedOrNot status=SUCCESS method=LoginTestClass.verify...)</span>
+                <span class="method-start">53535 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">53779 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyTheForgetPasswordResetCliksDirectedToCorrectPageOrNot</span>
+                <span class="method-start">60659 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyTheForgetPasswordResetCliksDirectedToCorrectPageOrNot status=SUCCESS method=L...)</span>
+                <span class="method-start">61613 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testClasses.PasswordResetTestClass</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">61863 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyIncorrectMailIdSubmitShowsThereIsNoUserWithThisEmail</span>
+                <span class="method-start">68433 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyIncorrectMailIdSubmitShowsThereIsNoUserWithThisEmail status=SUCCESS method=Pa...)</span>
+                <span class="method-start">70332 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">70604 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyEmailCannotBeBlankMessageShowsWhenClikngSendButton</span>
+                <span class="method-start">76761 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyEmailCannotBeBlankMessageShowsWhenClikngSendButton status=SUCCESS method=Pass...)</span>
+                <span class="method-start">78473 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">78746 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyEmailIsNotAValidEmailAddress</span>
+                <span class="method-start">86748 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyEmailIsNotAValidEmailAddress status=SUCCESS method=PasswordResetTestClass.ver...)</span>
+                <span class="method-start">88944 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">89196 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyCancelButtonClickRedirectToLoginPageOrNot</span>
+                <span class="method-start">96680 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyCancelButtonClickRedirectToLoginPageOrNot status=SUCCESS method=PasswordReset...)</span>
+                <span class="method-start">98357 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
