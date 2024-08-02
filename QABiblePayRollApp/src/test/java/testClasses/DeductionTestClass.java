@@ -8,30 +8,31 @@ import org.testng.annotations.Test;
 import pageClasses.DeductionPageClass;
 import pageClasses.HomePageClass;
 import pageClasses.LoginPageClass;
+import retryAnalyzer.RetryAnalyzer;
 
 public class DeductionTestClass extends BaseClass {
 	LoginPageClass lp;
 	HomePageClass hp;
 	DeductionPageClass dp;
-	
-	@Test(priority = 1)
+
+	@Test(priority = 1, retryAnalyzer = RetryAnalyzer.class)
 	public void verifyViewButtonClickOpensProfileViewPage() throws IOException {
-		lp=new LoginPageClass(driver);
+		lp = new LoginPageClass(driver);
 		lp.loginToSite(lp.readStringData(1, 0), lp.readStringData(1, 1));
-		hp=new HomePageClass(driver);
+		hp = new HomePageClass(driver);
 		hp.clickOnDeduction();
-		dp=new DeductionPageClass(driver);
+		dp = new DeductionPageClass(driver);
 		dp.clickOnViewIconOnTheRIghtSideDeductionListView();
 	}
-	
-	@Test(priority = 2)
+
+	@Test(priority = 2, retryAnalyzer = RetryAnalyzer.class)
 	public void searchAWorkerIsVisibleOrNotInTheList() throws IOException {
-		lp=new LoginPageClass(driver);
+		lp = new LoginPageClass(driver);
 		lp.loginToSite(lp.readStringData(1, 0), lp.readStringData(1, 1));
-		hp=new HomePageClass(driver);
+		hp = new HomePageClass(driver);
 		hp.clickOnDeduction();
-		dp=new DeductionPageClass(driver);
-		boolean actual_result=dp.searchAWorkerFromTable(lp.readStringData(7, 0));
+		dp = new DeductionPageClass(driver);
+		boolean actual_result = dp.searchAWorkerFromTable(lp.readStringData(7, 0));
 		Assert.assertEquals(actual_result, true);
 	}
 }

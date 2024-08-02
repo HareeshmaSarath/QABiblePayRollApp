@@ -8,46 +8,47 @@ import org.testng.annotations.Test;
 import pageClasses.ClientPageClass;
 import pageClasses.HomePageClass;
 import pageClasses.LoginPageClass;
+import retryAnalyzer.RetryAnalyzer;
 
 public class ClientTestClass extends BaseClass {
 	LoginPageClass lp;
 	HomePageClass hp;
 	ClientPageClass cp;
 
-	@Test(priority = 1)
+	@Test(priority = 1, retryAnalyzer = RetryAnalyzer.class)
 	public void verifyResetButtonIsWorkingOrNot() throws IOException {
-		lp=new LoginPageClass(driver);
+		lp = new LoginPageClass(driver);
 		lp.loginToSite(lp.readStringData(1, 0), lp.readStringData(1, 1));
-		hp=new HomePageClass(driver);
+		hp = new HomePageClass(driver);
 		hp.clickOnClients();
-		cp=new ClientPageClass(driver);
-		boolean actual_result=cp.resetButtonClick();
-		//System.out.println(actual_result);
+		cp = new ClientPageClass(driver);
+		boolean actual_result = cp.resetButtonClick();
+		// System.out.println(actual_result);
 		Assert.assertEquals(actual_result, true);
 	}
-	
-	@Test(priority = 2)
+
+	@Test(priority = 2, retryAnalyzer = RetryAnalyzer.class)
 	public void verifySuccessfullSearchUsingClientId() throws IOException {
-		lp=new LoginPageClass(driver);
+		lp = new LoginPageClass(driver);
 		lp.loginToSite(lp.readStringData(1, 0), lp.readStringData(1, 1));
-		hp=new HomePageClass(driver);
+		hp = new HomePageClass(driver);
 		hp.clickOnClients();
-		cp=new ClientPageClass(driver);
-		int search_value=Integer.parseInt(lp.readIntegerData(12, 1));
-		boolean actual_result=cp.searchButtonClickForSuccessfullSearch(search_value);
+		cp = new ClientPageClass(driver);
+		int search_value = Integer.parseInt(lp.readIntegerData(12, 1));
+		boolean actual_result = cp.searchButtonClickForSuccessfullSearch(search_value);
 		Assert.assertEquals(actual_result, true);
 	}
-	
-	@Test(priority = 3)
+
+	@Test(priority = 3, retryAnalyzer = RetryAnalyzer.class)
 	public void verifyUnSuccessfullSearchUsingClentId() throws IOException {
-		lp=new LoginPageClass(driver);
+		lp = new LoginPageClass(driver);
 		lp.loginToSite(lp.readStringData(1, 0), lp.readStringData(1, 1));
-		hp=new HomePageClass(driver);
+		hp = new HomePageClass(driver);
 		hp.clickOnClients();
-		cp=new ClientPageClass(driver);
-		int search_value=Integer.parseInt(lp.readIntegerData(12, 0));
-		String actual_result=cp.searchButtonClickForUnSuccessfullSearch(search_value);
+		cp = new ClientPageClass(driver);
+		int search_value = Integer.parseInt(lp.readIntegerData(12, 0));
+		String actual_result = cp.searchButtonClickForUnSuccessfullSearch(search_value);
 		Assert.assertEquals(actual_result, "No results found.");
 	}
-	
+
 }

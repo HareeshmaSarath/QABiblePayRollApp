@@ -7,13 +7,14 @@ import org.testng.annotations.Test;
 
 import pageClasses.LoginPageClass;
 import pageClasses.PasswordResetClass;
+import retryAnalyzer.RetryAnalyzer;
 
 public class PasswordResetTestClass extends BaseClass {
 
 	PasswordResetClass pr;
 	LoginPageClass lp;
 
-	@Test(priority = 1, groups = { "Group C" })
+	@Test(priority = 1, groups = { "Group C" }, retryAnalyzer = RetryAnalyzer.class)
 	public void verifyIncorrectMailIdSubmitShowsThereIsNoUserWithThisEmail() throws IOException {
 		lp = new LoginPageClass(driver);
 		lp.resetPasswordLinkClick();
@@ -22,7 +23,7 @@ public class PasswordResetTestClass extends BaseClass {
 		Assert.assertTrue(actual_result.contains(pr.readStringData(3, 3)));
 	}
 
-	@Test(priority = 2, groups = { "Group C" })
+	@Test(priority = 2, groups = { "Group C" }, retryAnalyzer = RetryAnalyzer.class)
 	public void verifyEmailCannotBeBlankMessageShowsWhenClikngSendButton() throws IOException {
 		lp = new LoginPageClass(driver);
 		lp.resetPasswordLinkClick();
@@ -31,7 +32,7 @@ public class PasswordResetTestClass extends BaseClass {
 		Assert.assertTrue(actual_error_result.contains(pr.readStringData(1, 3)));
 	}
 
-	@Test(priority = 3, groups = { "Group C" })
+	@Test(priority = 3, groups = { "Group C" }, retryAnalyzer = RetryAnalyzer.class)
 	public void verifyEmailIsNotAValidEmailAddress() throws IOException {
 		lp = new LoginPageClass(driver);
 		lp.resetPasswordLinkClick();
@@ -40,7 +41,7 @@ public class PasswordResetTestClass extends BaseClass {
 		Assert.assertEquals(actual_result, pr.readStringData(2, 3));
 	}
 
-	@Test(priority = 4, groups = { "Group B" })
+	@Test(priority = 4, groups = { "Group B" }, retryAnalyzer = RetryAnalyzer.class)
 	public void verifyCancelButtonClickRedirectToLoginPageOrNot() {
 		lp = new LoginPageClass(driver);
 		lp.resetPasswordLinkClick();

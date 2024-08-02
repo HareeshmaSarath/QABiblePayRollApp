@@ -10,6 +10,7 @@ import pageClasses.AddDeductionViewPageClass;
 import pageClasses.DeductionPageClass;
 import pageClasses.HomePageClass;
 import pageClasses.LoginPageClass;
+import retryAnalyzer.RetryAnalyzer;
 
 public class AddDeductionTestClass extends BaseClass {
 
@@ -19,7 +20,7 @@ public class AddDeductionTestClass extends BaseClass {
 	AddDeductionPageClass adp;
 	AddDeductionViewPageClass advp;
 
-	@Test(priority = 1)
+	@Test(priority = 1, retryAnalyzer = RetryAnalyzer.class)
 	public void addDeductionSuccesfuly() throws IOException {
 		lp = new LoginPageClass(driver);
 		lp.loginToSite(lp.readStringData(1, 0), lp.readStringData(1, 1));
@@ -38,7 +39,7 @@ public class AddDeductionTestClass extends BaseClass {
 		String Actual_result = advp.getTextFromDeductionAddedViewPage();
 		String Expected_Worker_Name = lp.readStringData(9, 3);
 		Expected_Worker_Name = Expected_Worker_Name.replaceAll("\\s.*", "");
-		//System.out.println(Actual_result + " " + Expected_Worker_Name);
+		// System.out.println(Actual_result + " " + Expected_Worker_Name);
 
 		Assert.assertTrue(Actual_result.contains(Expected_Worker_Name));
 	}
