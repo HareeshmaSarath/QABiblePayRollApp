@@ -12,6 +12,7 @@ import org.openqa.selenium.support.PageFactory;
 import utilities.ExcelReadClass;
 import utilities.ExplicitWaitClass;
 import utilities.GeneralUtilities;
+import utilities.RandomDataGeneration;
 
 public class AddDeductionPageClass {
 
@@ -44,13 +45,12 @@ public class AddDeductionPageClass {
 
 	@FindBy(xpath = "//span[@title='Clear field']")
 	WebElement clearFeild;
-	
+
 	@FindBy(xpath = "//ul[@role='tree']")
 	WebElement ulElement;
-	
+
 	@FindBy(xpath = "//input[@type='search']")
 	WebElement searchInput;
-	
 
 	public void addNewDedduction(String workText, String typeText, int amount, String date) {
 		glu.scrollToAnElement(driver, workerComboBox);
@@ -66,6 +66,10 @@ public class AddDeductionPageClass {
 		glu.pressEnterKey(driver);
 		wait.elementToBeClickableWait(driver, saveButton);
 		glu.clickOnElement(saveButton);
+	}
+
+	public int readDeductionAmount() {
+		return RandomDataGeneration.getDeductionAmount();
 	}
 
 	// Excel Read Portion

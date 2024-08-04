@@ -32,8 +32,9 @@ public class AddDeductionTestClass extends BaseClass {
 		dp.clickOnAddDuductionMenu();
 
 		adp = new AddDeductionPageClass(driver);
-		int amt = Integer.parseInt(lp.readIntegerData(7, 3));
-		adp.addNewDedduction(lp.readStringData(9, 3), lp.readStringData(8, 3), amt, lp.readStringData(10, 3));
+		//int amt = Integer.parseInt(lp.readIntegerData(7, 3));
+		int deduction_amt=adp.readDeductionAmount();
+		adp.addNewDedduction(lp.readStringData(9, 3), lp.readStringData(8, 3), deduction_amt, lp.readStringData(10, 3));
 
 		advp = new AddDeductionViewPageClass(driver);
 		String Actual_result = advp.getTextFromDeductionAddedViewPage();

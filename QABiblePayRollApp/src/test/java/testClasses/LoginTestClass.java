@@ -32,7 +32,7 @@ public class LoginTestClass extends BaseClass {
 	@Test(priority = 2, groups = { "Group A" }, retryAnalyzer = RetryAnalyzer.class)
 	public void verifySuccessfullLogin() throws IOException {
 		lp = new LoginPageClass(driver);
-		lp.loginToSite(lp.readStringData(1, 0), lp.readStringData(1, 1));
+		lp.typeOnUsername(lp.readStringData(1, 0)).typeOnPassword(lp.readStringData(1, 1)).clickOnButton();
 		hp = new HomePageClass(driver);
 		String actual_result = hp.homePageText();
 		String expected_result = lp.readStringData(1, 2);
