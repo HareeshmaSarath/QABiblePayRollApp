@@ -67,10 +67,10 @@ public class LoginPageClass {
 		return this;
 	}
 
-	public LoginPageClass clickOnButton() {
+	public HomePageClass clickOnButton() {
 		wait.elementToBeClickableWait(driver, loginButton);
 		glu.clickOnElement(loginButton);
-		return this;
+		return new HomePageClass(driver); //chaining of classes
 	}
 
 	public String incorrectLoginMessageText() {

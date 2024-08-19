@@ -8,6 +8,8 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
+import constants.Constants;
+
 public class ExcelReadClass {
 	static FileInputStream f; // class and object(refferance variable)
 	static XSSFWorkbook w; // class
@@ -16,7 +18,7 @@ public class ExcelReadClass {
 	// string data read - file not found -- such error shows when IO exception
 	// throws
 	public static String readStringData(int row, int col) throws IOException {
-		f = new FileInputStream(System.getProperty("user.dir") + "\\src\\test\\resources\\Credentials.xlsx");
+		f = new FileInputStream(Constants.HOME_DIRECTORY + Constants.TESTDATA_EXCELPATH);
 		w = new XSSFWorkbook(f); // our excel gives to workbook
 		s = w.getSheet("Sheet1"); // use getSheet method to find which sheet in an excel
 		XSSFRow r = s.getRow(row); // Interface
@@ -25,7 +27,7 @@ public class ExcelReadClass {
 	}
 
 	public static String readInegerData(int row, int col) throws IOException {
-		f = new FileInputStream(System.getProperty("user.dir") + "\\src\\test\\resources\\Credentials.xlsx");
+		f = new FileInputStream(Constants.HOME_DIRECTORY + Constants.TESTDATA_EXCELPATH);
 		w = new XSSFWorkbook(f);
 		s = w.getSheet("Sheet1");
 		XSSFRow r = s.getRow(row);

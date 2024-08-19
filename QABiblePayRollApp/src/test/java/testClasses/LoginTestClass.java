@@ -33,7 +33,7 @@ public class LoginTestClass extends BaseClass {
 	public void verifySuccessfullLogin() throws IOException {
 		lp = new LoginPageClass(driver);
 		lp.typeOnUsername(lp.readStringData(1, 0)).typeOnPassword(lp.readStringData(1, 1)).clickOnButton();
-		hp = new HomePageClass(driver);
+		hp = lp.clickOnButton(); //chaining of classes
 		String actual_result = hp.homePageText();
 		String expected_result = lp.readStringData(1, 2);
 		Assert.assertEquals(actual_result, expected_result);
